@@ -1,3 +1,4 @@
+import transliterate
 from transliterate import translit
 print (translit ('''Ladies and gentlemen, I'm 78 years old and I finally got 15 minutes of fame oncein\
 a lifetime and I guess that this is mine. People have also told me to make these next few minutes\
@@ -12,9 +13,3 @@ print (translit(num2words(15), 'ru'))
 print (translit(num2words(3), 'ru'))
 print (translit(num2words(40), 'ru'))
 print (translit(num2words(8), 'ru'))
-
-# print(translit("Lorem ipsum dolor sit amet", 'hy'))  # Выведет Լօրեմ իպսում դօլօր սիտ ամետ
-# print(translit("Lorem ipsum dolor sit amet", 'el'))  # Выведет Λορεμ ιψυμ δολορ σιτ αμετ
-# print(translit("Lorem ipsum dolor sit amet", 'uk'))  # Выведет Лорем іпсум долор сіт амет
-
-
