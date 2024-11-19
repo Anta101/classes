@@ -12,24 +12,26 @@ print(get_author(get_book_by_id('AAECTkuGjWo1Imwr-_6UrN-nzbo89sd3WSM', 1)))
 # Код для проверки: 
 # from books_sdk import get_book_by_id, get_author
 # print (get_book_by_id(1, 'AAECTkuGjWo1Imwr-_6UrN-nzbo89sd3WSM'))
-# Установленный факт: та же ошибка
+# Установленный факт: ошибка Traceback (most recent call last):
+#File "/home/runner/DevmanDebugLesson1/main.py", line 3, in <module>
 # Вывод: проблема не решена
-
 
 # Гипотеза 3: Проблема в типе данных, '1' должно быть числом
 # Способ проверки: если кавычек нет, значит 1 это число
 # Код для проверки: print(get_author(get_book_by_id(1, 'AAECTkuGjWo1Imwr-_6UrN-nzbo89sd3WSM')))
-# Установленный факт: та же ошибка
+# Установленный факт: та же ошибка, что и в предидущей гипотезе # Traceback (most recent call last):
+# File "/home/runner/DevmanDebugLesson1/main.py", line 3, in ##<module>
 # Вывод: проблема не решена
 
 # Гипотеза 4: Книги с номером 1 не существует
 # Способ проверки: изменим номер книги, например на 10
 # Код для проверки: print(get_author(get_book_by_id(10, 'AAECTkuGjWo1Imwr-_6UrN-nzbo89sd3WSM')))
-# Установленный факт: та же ошибка
+# Установленный факт: та же ошибка, что и в предидущей гипотезе # Traceback (most recent call last):
+# File "/home/runner/DevmanDebugLesson1/main.py", line 3, in ##<module>
 # Вывод: проблема не решена 
 
 # Гипотеза 5: аргументы перепутаны местами
 # Способ проверки: переставить аргументы местами
 # Код для проверки: print(get_author(get_book_by_id('AAECTkuGjWo1Imwr-_6UrN-nzbo89sd3WSM', 1)))
-# Установленный факт: Николай Гоголь
+# Установленный факт: код работает, результат - Николай Гоголь
 # Вывод: код работает!
